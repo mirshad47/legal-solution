@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="container-md ">
+<body class="container-fluid container-md ">
     <header>
         <!-- nav section -->
         <nav class="navbar navbar-expand-lg  mt-3 mb-5">
@@ -76,11 +76,21 @@
                     majority have suffered
                     alteration in some form, by injected humour.</p>
 
-                <div class="d-flex gap-3 justify-content-center">
-                    <input type="search" id="" class="form-control w-25" placeholder="Search your services" />
+                <!-- <div class="d-flex gap-3 justify-content-center flex-column flex-md-row">
+                    <input type="search" id="" class="form-control" placeholder="Search your services" />
                     <button class="btn btn-primary px-4">Search</button>
-                </div>
+                </div> -->
+                <!-- <div class="d-grid col-3 mx-auto">
+                    <input type="search" id="" class="form-control" placeholder="Search your services" />
+                    <button class="btn btn-primary px-4">Search</button>
+                </div> -->
 
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
             </div>
 
         </div>
